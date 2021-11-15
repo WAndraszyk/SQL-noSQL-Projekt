@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B9DF03D-66F4-B706-5A69-F17F2281E5DA" name="Pobranie">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:54:45 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="969A1397-2CA8-82D2-6C0D-4F8DC1D43EE9">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:55:56 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESEL" id="101F47ED-BA6B-A6EE-951F-8779027438C8">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:56:30 UTC</createdTime>
+<generatorID>DECB7332-E4A9-C45E-89EE-50BE2B0EEADB</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<referedAttribute>82D10295-33B4-CFAA-B7AF-CCD5396085BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="21441FED-78F9-AFE1-F958-89C05BF27F8E" name="Pobranie PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:56:06 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>969A1397-2CA8-82D2-6C0D-4F8DC1D43EE9</attributeRef>
+<attributeRef>101F47ED-BA6B-A6EE-951F-8779027438C8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

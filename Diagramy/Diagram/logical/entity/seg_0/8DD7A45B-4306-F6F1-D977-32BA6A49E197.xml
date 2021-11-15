@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8DD7A45B-4306-F6F1-D977-32BA6A49E197" name="Badanie">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:30:20 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nazwa" id="0F6DC90B-0A28-A006-92F5-993FF0C0C978">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:30:30 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Typ" id="34818903-7FFD-DAFC-BC12-D9D7198C9B0C">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:31:05 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Opis" id="D518ADD0-BDDC-161C-C57C-B2B52B568D45">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:31:19 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="949F8C97-E201-9990-801F-55D74F5CF7E0" name="Badanie PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:31:22 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0F6DC90B-0A28-A006-92F5-993FF0C0C978</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

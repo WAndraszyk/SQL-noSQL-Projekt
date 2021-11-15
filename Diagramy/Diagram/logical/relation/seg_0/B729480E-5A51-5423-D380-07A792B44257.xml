@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Laby - badania" directorySegmentName="seg_0" id="B729480E-5A51-5423-D380-07A792B44257">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:52:27 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Wykonuje</nameOnSource>
+<nameOnTarget>Wykonywane w</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3CB64F96-EE02-5941-2DE4-27F0F6526531</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8DD7A45B-4306-F6F1-D977-32BA6A49E197</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

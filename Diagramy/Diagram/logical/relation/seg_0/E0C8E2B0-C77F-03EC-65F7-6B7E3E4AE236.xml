@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Specjalista - czas" directorySegmentName="seg_0" id="E0C8E2B0-C77F-03EC-65F7-6B7E3E4AE236">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:19:05 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<sourcePk>E2320B4C-3A2F-C8D5-DA73-8CCD25C79F7C</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>Ma</nameOnSource>
+<nameOnTarget>Dostępne u</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6DC5C841-9180-F8DA-6845-02289966DC64</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>845EFBE9-049B-7454-9374-0FC8456D6C72</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

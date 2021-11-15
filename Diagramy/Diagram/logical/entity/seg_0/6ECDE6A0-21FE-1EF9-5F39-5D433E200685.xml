@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6ECDE6A0-21FE-1EF9-5F39-5D433E200685" name="Pracownik laboratorium">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:31:23 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>335F2D91-0DC4-4A31-1096-B50CFEE34F8E</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Laborant</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="B3ECB720-DBB5-92C7-E29F-0B3311535799">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:35:24 UTC</createdTime>
+<generatorID>145B33A4-935B-AC6F-0A20-553367624566</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<referedAttribute>389B1A95-2B5C-50F8-A5EE-6708B5E91069</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2EC528A6-BFD1-ECDD-C158-86EFD863C072" name="Pracownik laboratorium PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:35:24 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3ECB720-DBB5-92C7-E29F-0B3311535799</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

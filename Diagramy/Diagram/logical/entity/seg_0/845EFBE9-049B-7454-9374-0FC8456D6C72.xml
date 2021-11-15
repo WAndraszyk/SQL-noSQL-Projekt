@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="845EFBE9-049B-7454-9374-0FC8456D6C72" name="Jednostka czasu">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:18:59 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Czas</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Data i godzina" id="641B5E82-50DA-A742-B46E-94168BA5A9BF">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:19:12 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Wolna" id="D555EB17-978E-83EE-18EE-C7813EA7B382">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:21:18 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="76DE89E2-799D-5719-03CA-6F7C2BBF5A6A">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:09:32 UTC</createdTime>
+<generatorID>7E731844-628E-88C7-EE2C-DABCF7281ED8</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6768B9FA-65F9-5747-4C3D-2620C0B467B6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESEL" id="553446D6-AB1F-8285-591A-FA491467D755">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:09:32 UTC</createdTime>
+<generatorID>7E731844-628E-88C7-EE2C-DABCF7281ED8</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6B202E57-51B7-DC80-CF3D-A7FAC9430BE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESEL2" id="1862E9C7-9F00-E81B-0CD9-61A0A31B0B17">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:19:05 UTC</createdTime>
+<generatorID>E0C8E2B0-C77F-03EC-65F7-6B7E3E4AE236</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<referedAttribute>82D10295-33B4-CFAA-B7AF-CCD5396085BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09ABEB26-65C6-BD72-B949-908262AF0809" name="Jednostka czasu PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:21:53 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>641B5E82-50DA-A742-B46E-94168BA5A9BF</attributeRef>
+<attributeRef>1862E9C7-9F00-E81B-0CD9-61A0A31B0B17</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

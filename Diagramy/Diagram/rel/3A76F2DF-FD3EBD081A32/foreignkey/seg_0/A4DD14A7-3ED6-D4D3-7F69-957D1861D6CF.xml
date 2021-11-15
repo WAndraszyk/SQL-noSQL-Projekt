@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A4DD14A7-3ED6-D4D3-7F69-957D1861D6CF" containerWithKeyObject="D1ECCBD4-2334-7930-BBB3-3E4169072F54" localFKIndex="78B3D14E-6DAF-85A1-EB02-6C5C026EA5A7" name="Specjalistav1_Konto_służbowe_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:13:45 UTC</createdTime>
+<generatorID>50D48C99-CBC2-96C1-9C36-7F7FCFDF36CF</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<referredTableLongName>Konto_służbowe</referredTableLongName>
+<arc>4DFF042F-505B-8114-923E-2F49AADD3A42</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>44BD4642-CBB2-84BB-9616-CBA4880A3E20</referredTableID>
+<keyObject>E5A9CB04-FC25-C30D-660F-D9C23C5FE987</keyObject>
+<referredKeyID>E5A9CB04-FC25-C30D-660F-D9C23C5FE987</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PESEL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

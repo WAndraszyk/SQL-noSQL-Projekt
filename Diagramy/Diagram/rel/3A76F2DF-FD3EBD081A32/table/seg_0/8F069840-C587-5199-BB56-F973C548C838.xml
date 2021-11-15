@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F069840-C587-5199-BB56-F973C548C838" name="Zabiegi_-_specjalisci">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:13:45 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Zabiegv1_Nazwa" id="35687C59-1630-B892-1401-955AABBBEBD8">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:13:45 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B41D7589-1347-452E-A801-DD7A4DEEC50B" referredColumn="C975B8A9-D6F3-E3B0-86AD-1A4016D9B004"/>
+</associations>
+</Column>
+<Column name="Specjalistav1_PESEL" id="66660A90-D9DF-7DF2-FB41-1C7BC5648AE6">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:13:45 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB337793-3F3C-0B48-F747-F85793E7A4FF" referredColumn="3E67DD28-7BAA-18D1-D4BB-F2D9DF64DCFE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A128464-62CF-027A-18F8-5B2C09BE16D3" name="Zabiegi_-_specjalisci_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:13:45 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35687C59-1630-B892-1401-955AABBBEBD8"/>
+<colUsage columnID="66660A90-D9DF-7DF2-FB41-1C7BC5648AE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E174B41-3CD8-2133-BAFA-54832C221BAB" name="Zabiegi_-_specjalisci_Zabiegv1_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:13:45 UTC</createdTime>
+<generatorID>92E4F009-386F-54EF-B264-C18AE3660D56</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35687C59-1630-B892-1401-955AABBBEBD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55FF30D8-C55C-9465-E687-A96021005EA2" name="Zabiegi_-_specjalisci_Specjalistav1_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:13:45 UTC</createdTime>
+<generatorID>92E4F009-386F-54EF-B264-C18AE3660D56</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66660A90-D9DF-7DF2-FB41-1C7BC5648AE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

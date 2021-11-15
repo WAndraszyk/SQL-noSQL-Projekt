@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6DC5C841-9180-F8DA-6845-02289966DC64" name="Specjalista">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:14:09 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>335F2D91-0DC4-4A31-1096-B50CFEE34F8E</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Specjalizacja" id="DA58AC68-25DF-718A-EE46-27019681984D">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 17:18:17 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="C9053D7D-BAD0-8274-F0A5-D618013ED561">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:36:40 UTC</createdTime>
+<generatorID>20C7D0B8-8256-93A7-209C-FA314F385E50</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<referedAttribute>87AC9A4C-FAE2-8A57-044E-FF0824A5F592</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FC9EC568-A38A-A36D-65BD-DBB06A1F365C" name="Specjalista PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 18:36:40 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C9053D7D-BAD0-8274-F0A5-D618013ED561</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

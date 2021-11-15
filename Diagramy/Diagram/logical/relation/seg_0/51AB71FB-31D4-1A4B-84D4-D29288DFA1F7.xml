@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pobranie - badania" directorySegmentName="seg_0" id="51AB71FB-31D4-1A4B-84D4-D29288DFA1F7">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-15 19:02:48 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="3A76F2DF-A32A-B25A-1D0B-FD3EBD081A32" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Obejmuje</nameOnSource>
+<nameOnTarget>Wykonywane podczas</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>9B9DF03D-66F4-B706-5A69-F17F2281E5DA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8DD7A45B-4306-F6F1-D977-32BA6A49E197</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>
