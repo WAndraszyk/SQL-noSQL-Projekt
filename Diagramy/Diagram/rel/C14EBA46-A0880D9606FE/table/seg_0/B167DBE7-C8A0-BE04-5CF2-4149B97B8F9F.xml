@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B167DBE7-C8A0-BE04-5CF2-4149B97B8F9F" name="Jednostka_czasu">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>845EFBE9-049B-7454-9374-0FC8456D6C72</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<abbreviation>Czas</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Data_i_godzina" id="35658A15-A577-E5AA-A65E-A7C95A30D287">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>641B5E82-50DA-A742-B46E-94168BA5A9BF</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wolna" id="C8F8266B-217F-13D5-3494-236D64548F18">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>D555EB17-978E-83EE-18EE-C7813EA7B382</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wizyta_ID" id="F4289834-9DD1-694A-57DC-1505A5BD56EE">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>76DE89E2-799D-5719-03CA-6F7C2BBF5A6A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="175FB96B-2936-D6D9-4389-35334D8F89B8" referredColumn="DDFE43E4-A476-F44B-89AE-8EA748650178"/>
+</associations>
+</Column>
+<Column name="Wizyta_Pacjent_PESEL" id="6822D97A-F9F7-789D-92C6-A91ACBEBA89A">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>553446D6-AB1F-8285-591A-FA491467D755</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="175FB96B-2936-D6D9-4389-35334D8F89B8" referredColumn="5B107ACD-FADB-FABD-55AB-88A1B67B10AE"/>
+</associations>
+</Column>
+<Column name="Specjalista_PESEL" id="FD27E6AC-0F85-BE53-7F52-0FD93A3D2151">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>1862E9C7-9F00-E81B-0CD9-61A0A31B0B17</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0309F759-F4A8-7EC5-F073-04E37AC82EDA" referredColumn="DC1D11F5-6BD3-A613-CAB2-7DEDA0AB594C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EB96AF8-E779-229A-162E-F71CE70FF416" name="Jednostka_czasu_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>09ABEB26-65C6-BD72-B949-908262AF0809</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35658A15-A577-E5AA-A65E-A7C95A30D287"/>
+<colUsage columnID="FD27E6AC-0F85-BE53-7F52-0FD93A3D2151"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E412B4E7-CE51-4567-6D45-BB5EF76DE3F5" name="Jednostka_czasu_Specjalista_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>E0C8E2B0-C77F-03EC-65F7-6B7E3E4AE236</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD27E6AC-0F85-BE53-7F52-0FD93A3D2151"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72D3FEC1-61FD-C474-95FB-814516CE5FF7" name="Jednostka_czasu_Wizyta_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>7E731844-628E-88C7-EE2C-DABCF7281ED8</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4289834-9DD1-694A-57DC-1505A5BD56EE"/>
+<colUsage columnID="6822D97A-F9F7-789D-92C6-A91ACBEBA89A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

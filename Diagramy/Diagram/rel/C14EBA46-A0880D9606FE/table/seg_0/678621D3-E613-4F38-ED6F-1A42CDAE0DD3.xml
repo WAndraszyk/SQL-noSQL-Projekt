@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="678621D3-E613-4F38-ED6F-1A42CDAE0DD3" name="Konto_służbowe">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>335F2D91-0DC4-4A31-1096-B50CFEE34F8E</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="378A5C4D-53B1-FDF4-A104-2123F8FB56F8">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>82D10295-33B4-CFAA-B7AF-CCD5396085BA</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E601CFF-A233-23DE-A6E4-5148C983DA12" referredColumn="5F43D6B6-256D-6615-BB47-53E16A840400"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD3CE303-916A-02A2-4114-0BB2010A3237" name="Konto_służbowe_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>E2320B4C-3A2F-C8D5-DA73-8CCD25C79F7C</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="378A5C4D-53B1-FDF4-A104-2123F8FB56F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC247559-76C0-C3F1-2339-4A6F83CFD295" name="Konto_służbowe_Użytkownik_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>B608E915-6E45-B491-03D6-9CE080F6B6B4</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="378A5C4D-53B1-FDF4-A104-2123F8FB56F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

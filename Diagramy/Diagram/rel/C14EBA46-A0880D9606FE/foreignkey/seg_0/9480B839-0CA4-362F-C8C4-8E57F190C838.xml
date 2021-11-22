@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9480B839-0CA4-362F-C8C4-8E57F190C838" containerWithKeyObject="C73C2849-22AF-F5AD-AC75-9DD4F259C2A2" localFKIndex="B4A63FC2-14B7-8E74-ED15-2C751F4DAA4A" name="Pobranie_-_badania_Pobranie_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>51AB71FB-31D4-1A4B-84D4-D29288DFA1F7</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<referredTableLongName>Pobranie</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>1146E270-4453-8C72-D8C9-9FF187E74287</referredTableID>
+<keyObject>67CCD059-77C0-1D05-1DFB-DB9275F40FEC</keyObject>
+<referredKeyID>67CCD059-77C0-1D05-1DFB-DB9275F40FEC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID,Pacjent_PESEL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

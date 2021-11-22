@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD59F964-8FEC-9180-D43A-33A3EED7A1C0" name="Konsultacja">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>4FD58F06-07C3-ABB3-2ED3-A0D039C7BBA2</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1435DA47-9EB6-413B-D6C9-55BA863CDAD2">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>6768B9FA-65F9-5747-4C3D-2620C0B467B6</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60AEF831-846A-533B-855C-8849EB36DE86" referredColumn="DDFE43E4-A476-F44B-89AE-8EA748650178"/>
+</associations>
+</Column>
+<Column name="PESEL" id="B12383E3-AE63-1769-7831-9BF0F569F4DA">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>6B202E57-51B7-DC80-CF3D-A7FAC9430BE2</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60AEF831-846A-533B-855C-8849EB36DE86" referredColumn="5B107ACD-FADB-FABD-55AB-88A1B67B10AE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A81CC44-0662-DD07-1230-00372B03A1CC" name="Konsultacja_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>6980AC9B-78E6-5E37-22FF-047CC8133E0A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1435DA47-9EB6-413B-D6C9-55BA863CDAD2"/>
+<colUsage columnID="B12383E3-AE63-1769-7831-9BF0F569F4DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D72544B-F3F7-EF39-A46C-74C3027D5625" name="Konsultacja_Wizyta_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>850A8BB7-3AD4-A5A8-EB03-5EAC6682CB4A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1435DA47-9EB6-413B-D6C9-55BA863CDAD2"/>
+<colUsage columnID="B12383E3-AE63-1769-7831-9BF0F569F4DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

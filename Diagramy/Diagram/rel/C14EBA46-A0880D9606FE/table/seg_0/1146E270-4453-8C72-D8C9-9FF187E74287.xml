@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1146E270-4453-8C72-D8C9-9FF187E74287" name="Pobranie">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>9B9DF03D-66F4-B706-5A69-F17F2281E5DA</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="DCF84B2B-81B4-6D6D-6319-E17FC301891F">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>969A1397-2CA8-82D2-6C0D-4F8DC1D43EE9</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pacjent_PESEL" id="14590F7C-4441-FF44-7640-2B71669A5BAB">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>101F47ED-BA6B-A6EE-951F-8779027438C8</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B6275D3-C88B-F2E4-066B-5FB9C2EA8D70" referredColumn="605AABAD-B95F-7AF4-1EE0-8B769E70EE76"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67CCD059-77C0-1D05-1DFB-DB9275F40FEC" name="Pobranie_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>21441FED-78F9-AFE1-F958-89C05BF27F8E</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCF84B2B-81B4-6D6D-6319-E17FC301891F"/>
+<colUsage columnID="14590F7C-4441-FF44-7640-2B71669A5BAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F3650D2-B872-7EE2-F53E-2E87C032C1E3" name="Pobranie_Pacjent_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>DECB7332-E4A9-C45E-89EE-50BE2B0EEADB</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14590F7C-4441-FF44-7640-2B71669A5BAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

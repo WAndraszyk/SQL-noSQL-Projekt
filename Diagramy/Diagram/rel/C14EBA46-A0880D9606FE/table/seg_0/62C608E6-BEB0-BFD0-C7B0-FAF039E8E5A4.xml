@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62C608E6-BEB0-BFD0-C7B0-FAF039E8E5A4" name="Konsultacja_z_zabiegiem">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>5D754956-A4A3-FBD2-230D-224F62D9522C</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="8FB8D9CC-AE04-57AC-AAAA-39BD0D1789F1">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>6768B9FA-65F9-5747-4C3D-2620C0B467B6</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94908B5C-834C-AEBC-B3ED-C5E1AD8E78B5" referredColumn="DDFE43E4-A476-F44B-89AE-8EA748650178"/>
+</associations>
+</Column>
+<Column name="PESEL" id="CE4590F4-DE4B-D585-B23A-CD9C0D0F91F0">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>6B202E57-51B7-DC80-CF3D-A7FAC9430BE2</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94908B5C-834C-AEBC-B3ED-C5E1AD8E78B5" referredColumn="5B107ACD-FADB-FABD-55AB-88A1B67B10AE"/>
+</associations>
+</Column>
+<Column name="Zabieg_Nazwa" id="A3044F23-2E8B-086A-02DB-F1B9AF1580A1">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>1356C491-6282-AB14-0394-9C5196461A7D</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51F27C2D-B119-8C8B-8EB3-2D2F2EBA580E" referredColumn="CE0F7D69-5BA3-854B-D9C0-675A3266187E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A710637-C0E4-70AA-E1C0-2460A997E09D" name="Konsultacja_z_zabiegiem_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>6980AC9B-78E6-5E37-22FF-047CC8133E0A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FB8D9CC-AE04-57AC-AAAA-39BD0D1789F1"/>
+<colUsage columnID="CE4590F4-DE4B-D585-B23A-CD9C0D0F91F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5EEAD1D-A607-DB0D-A409-08F4AC3BEEB2" name="Konsultacja_z_zabiegiem__IDX">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DD2C97F1-9E2C-C1F5-CC34-A5A786E552BE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A3044F23-2E8B-086A-02DB-F1B9AF1580A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25E8F860-166D-74E1-0335-3F195B1A9B0B" name="Konsultacja_z_zabiegiem_Wizyta_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>8E0EEDA6-1172-04C1-A42C-04B9AB63FC6E</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FB8D9CC-AE04-57AC-AAAA-39BD0D1789F1"/>
+<colUsage columnID="CE4590F4-DE4B-D585-B23A-CD9C0D0F91F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AE885EF-65A5-65CA-529E-AE725D69CE34" name="Konsultacja_z_zabiegiem_Zabieg_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-11-22 19:08:48 UTC</createdTime>
+<generatorID>DD2C97F1-9E2C-C1F5-CC34-A5A786E552BE</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3044F23-2E8B-086A-02DB-F1B9AF1580A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
