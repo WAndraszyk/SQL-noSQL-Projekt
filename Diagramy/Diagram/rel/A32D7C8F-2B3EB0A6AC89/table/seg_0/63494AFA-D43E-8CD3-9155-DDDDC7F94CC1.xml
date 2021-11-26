@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63494AFA-D43E-8CD3-9155-DDDDC7F94CC1" name="Specjalista-zabieg">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Specjalista_PESEL" id="D657F6C0-5FD4-148F-6095-90F1E6659DD1">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA246D3D-1B21-1D90-375C-335B5F7E9562" referredColumn="A281964A-DC69-655E-1F9F-B5255D21E095"/>
+</associations>
+</Column>
+<Column name="Zabieg_ID" id="D7CBF0F5-A37F-5CBB-43A6-73D89779080F">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97CA561C-C71C-41F0-5C07-CA7A5348F7EB" referredColumn="05ACA6B1-2CDE-82AA-EB85-4FA2BE275D08"/>
+</associations>
+</Column>
+<Column name="Zabieg_PESEL" id="4EC12297-F690-737E-1C9F-4D7A00DB6FE2">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97CA561C-C71C-41F0-5C07-CA7A5348F7EB" referredColumn="3EC209BC-E22A-DD71-C61C-59CE15F1F9B2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E91DF88F-43C8-6C06-D367-04792280DAF6" name="Specjalista-zabieg_PK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D657F6C0-5FD4-148F-6095-90F1E6659DD1"/>
+<colUsage columnID="D7CBF0F5-A37F-5CBB-43A6-73D89779080F"/>
+<colUsage columnID="4EC12297-F690-737E-1C9F-4D7A00DB6FE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A286BED-D121-DAD1-13B1-0FDE0A20D35F" name="Specjalista-zabieg_Specjalista_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>1251CF5C-A095-CB27-9763-0A6592A8C544</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D657F6C0-5FD4-148F-6095-90F1E6659DD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F421C29-1AE7-9A9E-FF3B-499671967C4F" name="Specjalista-zabieg_Zabieg_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>1251CF5C-A095-CB27-9763-0A6592A8C544</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7CBF0F5-A37F-5CBB-43A6-73D89779080F"/>
+<colUsage columnID="4EC12297-F690-737E-1C9F-4D7A00DB6FE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

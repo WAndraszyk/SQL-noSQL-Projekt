@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33FA7420-D245-C1D4-8D3D-9C41FD512316" name="Pracownik_laboratorium">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>6ECDE6A0-21FE-1EF9-5F39-5D433E200685</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<abbreviation>Laborant</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="7DDF01E6-C4EC-1BA9-45C3-D2B4888C12D8">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>82D10295-33B4-CFAA-B7AF-CCD5396085BA</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD2A2B24-6F11-D068-0AD1-1CFFD298D97D" referredColumn="A3843996-95DA-695D-43F2-ADECFD93C044"/>
+</associations>
+</Column>
+<Column name="Laboratorium_ID" id="B67A0466-4DDC-1F7D-73D3-D5E398F6E1C1">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>B3ECB720-DBB5-92C7-E29F-0B3311535799</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6285394D-2F03-90B1-6E40-DBB8772FDE28" referredColumn="2252402D-D45B-142C-7CE4-555590B95325"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B65015DE-6B47-45E3-9E25-27B99D6EC558" name="Pracownik_laboratorium_PK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>E2320B4C-3A2F-C8D5-DA73-8CCD25C79F7C</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DDF01E6-C4EC-1BA9-45C3-D2B4888C12D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E12578EF-7845-F5C3-6E98-634C4CDCABA9" name="Pracownik_laboratorium_PKv1">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>2EC528A6-BFD1-ECDD-C158-86EFD863C072</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B67A0466-4DDC-1F7D-73D3-D5E398F6E1C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A7A2F32-FB91-A55B-3CAC-28853FE88AEE" name="Pracownik_laboratorium_Użytkownik_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>BE29DD95-D05A-B002-6150-9FDBC5860B56</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DDF01E6-C4EC-1BA9-45C3-D2B4888C12D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D80A719-3BE8-045E-4D0E-6A4B4D1F4D8D" name="Pracownik_laboratorium_Laboratorium_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>145B33A4-935B-AC6F-0A20-553367624566</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B67A0466-4DDC-1F7D-73D3-D5E398F6E1C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

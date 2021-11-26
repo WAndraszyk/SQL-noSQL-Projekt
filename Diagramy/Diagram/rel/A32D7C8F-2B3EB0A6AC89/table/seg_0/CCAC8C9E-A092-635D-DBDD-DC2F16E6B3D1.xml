@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCAC8C9E-A092-635D-DBDD-DC2F16E6B3D1" name="Pobranie">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>9B9DF03D-66F4-B706-5A69-F17F2281E5DA</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B85ACF39-E70A-CD33-E728-11B1705C7305">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>969A1397-2CA8-82D2-6C0D-4F8DC1D43EE9</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pacjent_PESEL" id="7AFF69CD-6CA9-FD80-4BBA-D66D6DBE5415">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>101F47ED-BA6B-A6EE-951F-8779027438C8</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7D6E42F-FDF0-234F-FEBB-94A5473FFE5A" referredColumn="B3DF64E2-5553-6400-D27F-526B8913EF31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6602F4C-88C8-95A0-B1EF-381D6E5D8F02" name="Pobranie_PK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>21441FED-78F9-AFE1-F958-89C05BF27F8E</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B85ACF39-E70A-CD33-E728-11B1705C7305"/>
+<colUsage columnID="7AFF69CD-6CA9-FD80-4BBA-D66D6DBE5415"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="218F3B80-7347-E0F8-ECCE-3FDDE04BB441" name="Pobranie_Pacjent_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>DECB7332-E4A9-C45E-89EE-50BE2B0EEADB</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AFF69CD-6CA9-FD80-4BBA-D66D6DBE5415"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

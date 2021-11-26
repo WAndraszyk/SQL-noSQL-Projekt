@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75D3D881-309D-F67C-4782-25A160B71843" name="Specjalista">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>066D6CD3-01BD-01BE-CB69-D1B09A4D668F</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="A281964A-DC69-655E-1F9F-B5255D21E095">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>82D10295-33B4-CFAA-B7AF-CCD5396085BA</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B07D0A1-1712-CCED-22E5-AAE3EE389F57" referredColumn="A3843996-95DA-695D-43F2-ADECFD93C044"/>
+</associations>
+</Column>
+<Column name="Specjalizacja" id="52B9524D-8E68-34ED-94A5-3218334B655D">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>0858041D-F8DF-2397-7B48-6BFAFD6620D5</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Poradnia_ID" id="308E0545-52A3-4C32-E97D-423F6605F11D">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>9D21865C-FE23-D2B5-BA86-F5F2B4119B2C</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98465C68-669B-E0B4-D059-E6CA7B863D44" referredColumn="62645003-FD29-F43A-D5B5-F76D6A544EE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70781FDD-EC95-BEB3-BE44-0A7261914D9A" name="Specjalista_PK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>E2320B4C-3A2F-C8D5-DA73-8CCD25C79F7C</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A281964A-DC69-655E-1F9F-B5255D21E095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76D77DF0-2415-B39C-1F98-9CAB6900FA25" name="Specjalista_Użytkownik_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>1B1C85F0-BD46-975E-0213-BF00566DB1CF</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A281964A-DC69-655E-1F9F-B5255D21E095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46EDA8C0-2A3F-E395-1B83-9CFB89D8E15A" name="Specjalista_Poradnia_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>60A36F0F-6DB4-7AEF-6050-0C51DD0C367F</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="308E0545-52A3-4C32-E97D-423F6605F11D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

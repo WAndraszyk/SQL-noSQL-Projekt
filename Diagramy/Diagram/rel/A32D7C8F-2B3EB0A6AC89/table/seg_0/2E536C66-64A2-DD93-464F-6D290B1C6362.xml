@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E536C66-64A2-DD93-464F-6D290B1C6362" name="Zabieg">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>AF06DE8A-B577-E509-1ED3-C17701394AFE</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="05ACA6B1-2CDE-82AA-EB85-4FA2BE275D08">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>6768B9FA-65F9-5747-4C3D-2620C0B467B6</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62B2C229-2BC0-1154-D922-D82E1E236135" referredColumn="C5F5B982-79A3-FB0E-65AB-9AD742A551F7"/>
+</associations>
+</Column>
+<Column name="PESEL" id="3EC209BC-E22A-DD71-C61C-59CE15F1F9B2">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>6B202E57-51B7-DC80-CF3D-A7FAC9430BE2</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62B2C229-2BC0-1154-D922-D82E1E236135" referredColumn="155A27E6-79DC-E58B-F1E3-29F3E1C62A4E"/>
+</associations>
+</Column>
+<Column name="Nazwa" id="7FCB09B1-82B2-8ECD-3A48-285815A9B7A8">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>E0015970-7D64-4334-7923-0E14325219E4</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis" id="59ECB4E7-B110-EA37-ECE2-08B576A49479">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>9E68B808-ECBC-9748-E3B7-0216DC4C9515</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DB14232-38CA-FB8C-A041-81DC98EB545E" name="Zabieg_PK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>6980AC9B-78E6-5E37-22FF-047CC8133E0A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05ACA6B1-2CDE-82AA-EB85-4FA2BE275D08"/>
+<colUsage columnID="3EC209BC-E22A-DD71-C61C-59CE15F1F9B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADC71CBA-20A9-A996-828F-C1AF56C3BA00" name="Zabieg_PKv1">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>A0A00031-07B7-E3C5-0580-921AC3A6A88D</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FCB09B1-82B2-8ECD-3A48-285815A9B7A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B885C683-8055-2CE5-E861-DB50E68EF52E" name="Zabieg_Wizyta_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>319F7B00-5BF0-BAF0-8182-432281465088</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05ACA6B1-2CDE-82AA-EB85-4FA2BE275D08"/>
+<colUsage columnID="3EC209BC-E22A-DD71-C61C-59CE15F1F9B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

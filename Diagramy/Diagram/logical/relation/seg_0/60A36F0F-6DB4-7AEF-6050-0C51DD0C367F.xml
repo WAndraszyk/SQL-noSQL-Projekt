@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Specjalista-poradnia" directorySegmentName="seg_0" id="60A36F0F-6DB4-7AEF-6050-0C51DD0C367F">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:16:38 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<engineerTo>
+<item key="A32D7C8F-5E63-DF11-6879-2B3EB0A6AC89" value="true"/>
+</engineerTo>
+<targetPk>2D5AB0BD-C2DC-2B7E-0C22-47B835364B72</targetPk>
+<identifying>false</identifying>
+<nameOnSource>Pracuje w</nameOnSource>
+<nameOnTarget>Zatrudnia</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>066D6CD3-01BD-01BE-CB69-D1B09A4D668F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>499472B8-D055-A2C1-0A37-0C7D29E28F03</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

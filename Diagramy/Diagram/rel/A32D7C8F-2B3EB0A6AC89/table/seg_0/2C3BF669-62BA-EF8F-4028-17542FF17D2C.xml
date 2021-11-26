@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C3BF669-62BA-EF8F-4028-17542FF17D2C" name="Pacjent">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>3A4B7B97-83B4-E4D9-2A96-FCA080E5A482</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="B3DF64E2-5553-6400-D27F-526B8913EF31">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>82D10295-33B4-CFAA-B7AF-CCD5396085BA</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA2E2D5E-A365-E171-D5E9-BA5FDA9C21B8" referredColumn="A3843996-95DA-695D-43F2-ADECFD93C044"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22B99089-B753-244B-556D-B7EA1C7A8C8A" name="Pacjent_PK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>E2320B4C-3A2F-C8D5-DA73-8CCD25C79F7C</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3DF64E2-5553-6400-D27F-526B8913EF31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8BF79B3-CB40-CE5A-3636-9CAF36900437" name="Pacjent_Użytkownik_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>03B7C415-C35A-0FAB-482D-B6CB05D910E0</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3DF64E2-5553-6400-D27F-526B8913EF31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

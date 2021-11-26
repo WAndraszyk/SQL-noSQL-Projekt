@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F9CA91C1-56D6-3C44-5EEB-0B74451C0F88" containerWithKeyObject="8B06A62D-93FF-F2A7-DEC6-C1E17A36E623" localFKIndex="D68C904C-D92D-1630-5A86-1D1DD7765D3E" name="Laby_-_badania_Badanie_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>B729480E-5A51-5423-D380-07A792B44257</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<referredTableLongName>Badanie</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>6F9D25F5-98B9-26A9-BC7C-E7D37A20A6F9</referredTableID>
+<keyObject>6099AF45-834F-9460-17D0-F106749B76AB</keyObject>
+<referredKeyID>6099AF45-834F-9460-17D0-F106749B76AB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Nazwa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

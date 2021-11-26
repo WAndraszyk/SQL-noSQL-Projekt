@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECFFA47B-CC1D-F3F8-F4B1-BCB73700CA40" name="Pobranie_-_badania">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pobranie_ID" id="38B9427C-192B-BBBA-5249-998EDDF9CFAC">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C341E3A8-8FBE-EBF5-7922-4BFBD6767D12" referredColumn="B85ACF39-E70A-CD33-E728-11B1705C7305"/>
+</associations>
+</Column>
+<Column name="Pobranie_Pacjent_PESEL" id="136C320A-9D1F-6830-8ECE-E393CA28CFA8">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C341E3A8-8FBE-EBF5-7922-4BFBD6767D12" referredColumn="7AFF69CD-6CA9-FD80-4BBA-D66D6DBE5415"/>
+</associations>
+</Column>
+<Column name="Badanie_Nazwa" id="FD1BC864-47A1-D858-C69F-A40D056FDBEB">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="291B1868-F7A1-21AF-F1C2-F99791387528" referredColumn="9D7A34E1-1F80-EB23-C969-B474ECD109C6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2F0A497-58F2-5774-6933-0D7BB825A652" name="Pobranie_-_badania_PK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38B9427C-192B-BBBA-5249-998EDDF9CFAC"/>
+<colUsage columnID="136C320A-9D1F-6830-8ECE-E393CA28CFA8"/>
+<colUsage columnID="FD1BC864-47A1-D858-C69F-A40D056FDBEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92353F18-57D1-45EF-2D35-C4C368F7CF56" name="Pobranie_-_badania_Pobranie_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>51AB71FB-31D4-1A4B-84D4-D29288DFA1F7</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38B9427C-192B-BBBA-5249-998EDDF9CFAC"/>
+<colUsage columnID="136C320A-9D1F-6830-8ECE-E393CA28CFA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9BC78BC-F9E9-BD03-925F-475CA2A71EB9" name="Pobranie_-_badania_Badanie_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-11-26 19:38:57 UTC</createdTime>
+<generatorID>51AB71FB-31D4-1A4B-84D4-D29288DFA1F7</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD1BC864-47A1-D858-C69F-A40D056FDBEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
