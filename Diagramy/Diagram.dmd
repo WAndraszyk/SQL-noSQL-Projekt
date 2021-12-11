@@ -5,4 +5,9 @@
 <ownerDesignName>Diagram</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>071A0ABB-0981-2440-278E-857CA69EA44E</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="507F1679-45BC-1D26-B41A-6F9F62C672EE">
+<designStoragePath>F:\schemat</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>
