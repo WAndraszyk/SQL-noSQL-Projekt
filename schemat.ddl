@@ -1,10 +1,10 @@
 --Użytkownicy
 create table Uzytkownicy(
     PESEL not null,
-    imię not null,
+    imie not null,
     nazwisko not null,
     telefon not null,
-    e-mail not null,
+    email not null,
     primary key(PESEL)
 );
 
@@ -40,15 +40,15 @@ create table Poradnie(
     primary key (ID)
 );
 
--- CREATE SEQUENCE poradnia_id_seq START WITH 1 NOCACHE ORDER;
+CREATE SEQUENCE poradnia_id_seq START WITH 1 NOCACHE ORDER;
 
--- CREATE OR REPLACE TRIGGER poradnia_id_trg BEFORE
---     INSERT ON poradnia
---     FOR EACH ROW
---     WHEN ( new.id IS NULL )
--- BEGIN
---     :new.id := poradnia_id_seq.nextval;
--- END;
+CREATE OR REPLACE TRIGGER poradnia_id_trg BEFORE
+    INSERT ON Poradnie
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := poradnia_id_seq.nextval;
+END;
 
 --Jednostki czasu
 create table Jednostki_czasu(
@@ -67,15 +67,15 @@ create table Wizyty(
     primary key (ID, pesel_pacjenta)
 );
 
--- CREATE SEQUENCE wizyta_id_seq START WITH 1 NOCACHE ORDER;
+CREATE SEQUENCE wizyta_id_seq START WITH 1 NOCACHE ORDER;
 
--- CREATE OR REPLACE TRIGGER wizyta_id_trg BEFORE
---     INSERT ON wizyta
---     FOR EACH ROW
---     WHEN ( new.id IS NULL )
--- BEGIN
---     :new.id := wizyta_id_seq.nextval;
--- END;
+CREATE OR REPLACE TRIGGER wizyta_id_trg BEFORE
+    INSERT ON Wizyty
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := wizyta_id_seq.nextval;
+END;
 
 --Konsultacje
 create table Konsultacje(
@@ -114,15 +114,15 @@ create table Laboratoria(
     primary key (ID)
 );
 
--- CREATE SEQUENCE laboratorium_id_seq START WITH 1 NOCACHE ORDER;
+CREATE SEQUENCE laboratorium_id_seq START WITH 1 NOCACHE ORDER;
 
--- CREATE OR REPLACE TRIGGER laboratorium_id_trg BEFORE
---     INSERT ON laboratorium
---     FOR EACH ROW
---     WHEN ( new.id IS NULL )
--- BEGIN
---     :new.id := laboratorium_id_seq.nextval;
--- END;
+CREATE OR REPLACE TRIGGER laboratorium_id_trg BEFORE
+    INSERT ON Laboratoria
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := laboratorium_id_seq.nextval;
+END;
 
 --Badania
 create table Badania(
@@ -145,19 +145,19 @@ create table Pobrania(
     primary key(ID, pesel_pacjenta)
 );
 
--- CREATE SEQUENCE pobranie_id_seq START WITH 1 NOCACHE ORDER;
+CREATE SEQUENCE pobranie_id_seq START WITH 1 NOCACHE ORDER;
 
--- CREATE OR REPLACE TRIGGER pobranie_id_trg BEFORE
---     INSERT ON pobranie
---     FOR EACH ROW
---     WHEN ( new.id IS NULL )
--- BEGIN
---     :new.id := pobranie_id_seq.nextval;
--- END;
+CREATE OR REPLACE TRIGGER pobranie_id_trg BEFORE
+    INSERT ON Pobrania
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := pobranie_id_seq.nextval;
+END;
 
 create table Badania_do_pobrania(
     id_pobrania references Pobrania(ID),
     pesel_pacjenta references Pacjenci(PESEL),
     nazwa_badania references Badania(nazwa),
-    primary key(ID, pesel_pacjenta, nazwa_badania)
+    primary key(id_pobrania, pesel_pacjenta, nazwa_badania)
 );
