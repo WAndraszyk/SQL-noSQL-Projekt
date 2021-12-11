@@ -14,18 +14,30 @@ create table Pacjenci(
     primary key (PESEL)
 );
 
+--Laboratoria
+create table Laboratoria(
+    ID not null,
+    nazwa not null,
+    miasto not null,
+    adres not null,
+    telefon not null,
+    primary key (ID)
+);
+
+-- CREATE SEQUENCE laboratorium_id_seq START WITH 1 NOCACHE ORDER;
+
+-- CREATE OR REPLACE TRIGGER laboratorium_id_trg BEFORE
+--     INSERT ON Laboratoria
+--     FOR EACH ROW
+--     WHEN ( new.id IS NULL )
+-- BEGIN
+--     :new.id := laboratorium_id_seq.nextval;
+-- END;
+
 --Pracownicy laboratorium
 create table Laboranci(
     PESEL references Uzytkownicy (PESEL) not null,
     id_laboratorium references Laboratoria(ID) not null,
-    primary key (PESEL)
-);
-
---Specjaliści
-create table Specjalisci(
-    PESEL references Uzytkownicy (PESEL) not null,
-    specjalizacja not null,
-    id_poradni references Poradnie(ID),
     primary key (PESEL)
 );
 
@@ -40,15 +52,40 @@ create table Poradnie(
     primary key (ID)
 );
 
-CREATE SEQUENCE poradnia_id_seq START WITH 1 NOCACHE ORDER;
+-- CREATE SEQUENCE poradnia_id_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER poradnia_id_trg BEFORE
-    INSERT ON Poradnie
-    FOR EACH ROW
-    WHEN ( new.id IS NULL )
-BEGIN
-    :new.id := poradnia_id_seq.nextval;
-END;
+-- CREATE OR REPLACE TRIGGER poradnia_id_trg BEFORE
+--     INSERT ON Poradnie
+--     FOR EACH ROW
+--     WHEN ( new.id IS NULL )
+-- BEGIN
+--     :new.id := poradnia_id_seq.nextval;
+-- END;
+
+--Specjaliści
+create table Specjalisci(
+    PESEL references Uzytkownicy (PESEL) not null,
+    specjalizacja not null,
+    id_poradni references Poradnie(ID),
+    primary key (PESEL)
+);
+
+--Wizyty
+create table Wizyty(
+    ID not null,
+    pesel_pacjenta references Pacjenci(pesel) not null,
+    primary key (ID, pesel_pacjenta)
+);
+
+-- CREATE SEQUENCE wizyta_id_seq START WITH 1 NOCACHE ORDER;
+
+-- CREATE OR REPLACE TRIGGER wizyta_id_trg BEFORE
+--     INSERT ON Wizyty
+--     FOR EACH ROW
+--     WHEN ( new.id IS NULL )
+-- BEGIN
+--     :new.id := wizyta_id_seq.nextval;
+-- END;
 
 --Jednostki czasu
 create table Jednostki_czasu(
@@ -59,23 +96,6 @@ create table Jednostki_czasu(
     pesel_specjalisty references Specjalisci(PESEL) not null,
     primary key(data_i_godzina, pesel_specjalisty)
 );
-
---Wizyty
-create table Wizyty(
-    ID not null,
-    pesel_pacjenta references Pacjenci(pesel) not null,
-    primary key (ID, pesel_pacjenta)
-);
-
-CREATE SEQUENCE wizyta_id_seq START WITH 1 NOCACHE ORDER;
-
-CREATE OR REPLACE TRIGGER wizyta_id_trg BEFORE
-    INSERT ON Wizyty
-    FOR EACH ROW
-    WHEN ( new.id IS NULL )
-BEGIN
-    :new.id := wizyta_id_seq.nextval;
-END;
 
 --Konsultacje
 create table Konsultacje(
@@ -104,26 +124,6 @@ create table Wykonywane_zabiegi(
     primary key(pesel_specjalisty, nazwa_zabiegu)
 );
 
---Laboratoria
-create table Laboratoria(
-    ID not null,
-    nazwa not null,
-    miasto not null,
-    adres not null,
-    telefon not null,
-    primary key (ID)
-);
-
-CREATE SEQUENCE laboratorium_id_seq START WITH 1 NOCACHE ORDER;
-
-CREATE OR REPLACE TRIGGER laboratorium_id_trg BEFORE
-    INSERT ON Laboratoria
-    FOR EACH ROW
-    WHEN ( new.id IS NULL )
-BEGIN
-    :new.id := laboratorium_id_seq.nextval;
-END;
-
 --Badania
 create table Badania(
     nazwa not null,
@@ -145,19 +145,19 @@ create table Pobrania(
     primary key(ID, pesel_pacjenta)
 );
 
-CREATE SEQUENCE pobranie_id_seq START WITH 1 NOCACHE ORDER;
+-- CREATE SEQUENCE pobranie_id_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER pobranie_id_trg BEFORE
-    INSERT ON Pobrania
-    FOR EACH ROW
-    WHEN ( new.id IS NULL )
-BEGIN
-    :new.id := pobranie_id_seq.nextval;
-END;
+-- CREATE OR REPLACE TRIGGER pobranie_id_trg BEFORE
+--     INSERT ON Pobrania
+--     FOR EACH ROW
+--     WHEN ( new.id IS NULL )
+-- BEGIN
+--     :new.id := pobranie_id_seq.nextval;
+-- END;
 
 create table Badania_do_pobrania(
     id_pobrania references Pobrania(ID),
-    pesel_pacjenta references Pacjenci(PESEL),
+    pesel_pacjenta references Pobrania(pesel_pacjenta),
     nazwa_badania references Badania(nazwa),
     primary key(id_pobrania, pesel_pacjenta, nazwa_badania)
 );
