@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5179F552-74EF-4A82-A96B-03C64C6EA324" name="Pobranie_-_badania">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pobranie_ID" id="9DD99055-5F75-0AB2-A72E-F9C8F0B3AF44">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6F51D50-C976-85BF-AAF2-E24697C8BE6A" referredColumn="A2384633-3357-9F77-4D88-56C214BEA130"/>
+</associations>
+</Column>
+<Column name="Pobranie_Pacjent_PESEL" id="4747AF2D-B91E-871D-3115-346FB8F91DE4">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6F51D50-C976-85BF-AAF2-E24697C8BE6A" referredColumn="6F2204EE-55AC-1B19-6E2B-24A4BDADB98F"/>
+</associations>
+</Column>
+<Column name="Badanie_Nazwa" id="F5AA3D1E-A144-D9CA-45B4-F51AFF052B92">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50C26452-8F5B-FB14-C3CA-A498F96CF5E9" referredColumn="567FE6A6-FA9C-EBAB-2D40-9350B4D775B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EB6FA44-449B-8EA4-A561-6F761B5CDD01" name="Pobranie_-_badania_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DD99055-5F75-0AB2-A72E-F9C8F0B3AF44"/>
+<colUsage columnID="4747AF2D-B91E-871D-3115-346FB8F91DE4"/>
+<colUsage columnID="F5AA3D1E-A144-D9CA-45B4-F51AFF052B92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A28410EC-2083-6EE9-99A8-1AE64DCC259D" name="Pobranie_-_badania_Pobranie_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>51AB71FB-31D4-1A4B-84D4-D29288DFA1F7</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DD99055-5F75-0AB2-A72E-F9C8F0B3AF44"/>
+<colUsage columnID="4747AF2D-B91E-871D-3115-346FB8F91DE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5D12E5F-70DC-89E1-32E1-337AA31D6525" name="Pobranie_-_badania_Badanie_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>51AB71FB-31D4-1A4B-84D4-D29288DFA1F7</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5AA3D1E-A144-D9CA-45B4-F51AFF052B92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

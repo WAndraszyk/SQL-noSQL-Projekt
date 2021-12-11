@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B294A114-31DB-B95B-326C-BB543431240C" name="Specjalista-zabieg">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Specjalista_PESEL" id="03E2B257-7362-6C8D-67D6-30C895B0F591">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6999833D-B9AF-F566-3AEE-AF5A4226AC09" referredColumn="12E1564A-5654-7A53-B6B0-EB26C24571D3"/>
+</associations>
+</Column>
+<Column name="Zabieg_ID" id="E7453DDA-BBBF-5E5B-45AE-6E89D2EB3B26">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7803EE6-DD79-DEFF-BE72-6D72C793A2D4" referredColumn="70DC01E4-9860-BCF6-237E-6183D8590503"/>
+</associations>
+</Column>
+<Column name="Zabieg_PESEL" id="695AAC54-D665-7F80-B678-0DF6B20344DA">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7803EE6-DD79-DEFF-BE72-6D72C793A2D4" referredColumn="E78B1C82-8478-9716-1310-925A7DAC5598"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E73D01A-BF0E-3E2B-17DE-A0F3DB25F3E6" name="Specjalista-zabieg_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03E2B257-7362-6C8D-67D6-30C895B0F591"/>
+<colUsage columnID="E7453DDA-BBBF-5E5B-45AE-6E89D2EB3B26"/>
+<colUsage columnID="695AAC54-D665-7F80-B678-0DF6B20344DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3E48908-EF28-2291-E02F-D04030363EEF" name="Specjalista-zabieg_Specjalista_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>1251CF5C-A095-CB27-9763-0A6592A8C544</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03E2B257-7362-6C8D-67D6-30C895B0F591"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F754CECD-FCA8-3669-7644-5475CD3E3F3C" name="Specjalista-zabieg_Zabieg_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>1251CF5C-A095-CB27-9763-0A6592A8C544</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7453DDA-BBBF-5E5B-45AE-6E89D2EB3B26"/>
+<colUsage columnID="695AAC54-D665-7F80-B678-0DF6B20344DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

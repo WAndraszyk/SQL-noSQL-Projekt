@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B19D9452-7FDE-BA15-2C33-716E0053B262" name="Konsultacja">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>4FD58F06-07C3-ABB3-2ED3-A0D039C7BBA2</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D8755D51-E87C-FFFD-F53B-5DF01453A421">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>6768B9FA-65F9-5747-4C3D-2620C0B467B6</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="605B4A37-D40D-C864-5296-0532F1706D5F" referredColumn="5C1C2FD3-E9DE-BECC-923C-FA1358442913"/>
+</associations>
+</Column>
+<Column name="PESEL" id="9D5C510B-BFCE-3C36-2327-4AA0018325FD">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>6B202E57-51B7-DC80-CF3D-A7FAC9430BE2</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="605B4A37-D40D-C864-5296-0532F1706D5F" referredColumn="9601B5F4-7FAF-FDC0-337F-F5529E6BC59F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89CFE7BD-DCFE-86B0-2997-3A5843C79DC6" name="Konsultacja_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>6980AC9B-78E6-5E37-22FF-047CC8133E0A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8755D51-E87C-FFFD-F53B-5DF01453A421"/>
+<colUsage columnID="9D5C510B-BFCE-3C36-2327-4AA0018325FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CED8CA2-F038-ACD4-1B97-96176DB161D5" name="Konsultacja_Wizyta_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>850A8BB7-3AD4-A5A8-EB03-5EAC6682CB4A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8755D51-E87C-FFFD-F53B-5DF01453A421"/>
+<colUsage columnID="9D5C510B-BFCE-3C36-2327-4AA0018325FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

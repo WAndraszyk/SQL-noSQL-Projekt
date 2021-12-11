@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B45A507D-9F62-DF8E-77B9-E168C63D4674" name="Pracownik_laboratorium">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>6ECDE6A0-21FE-1EF9-5F39-5D433E200685</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<abbreviation>Laborant</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="378C9C9A-26DB-4C22-2573-FC68E964FD2F">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>82D10295-33B4-CFAA-B7AF-CCD5396085BA</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A27E47BF-E675-29BF-30DF-75B2A731F3FF" referredColumn="2255D552-ADF0-F18D-A75C-746226E9327D"/>
+</associations>
+</Column>
+<Column name="Laboratorium_ID" id="8B71DFD0-8049-592B-8A82-4631085BEC7F">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>B3ECB720-DBB5-92C7-E29F-0B3311535799</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BB17442-DFA6-D705-7567-FF3F0271EB3E" referredColumn="020C470D-9682-7A5A-ACCB-4FEB8A9F4A6F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6558A64C-36E6-79A4-BBE8-7EA3EB4D3E3F" name="Pracownik_laboratorium_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>E2320B4C-3A2F-C8D5-DA73-8CCD25C79F7C</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="378C9C9A-26DB-4C22-2573-FC68E964FD2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADCCD485-7C66-D37E-3BB9-6F8B1F4C05E5" name="Pracownik_laboratorium_PKv1">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>2EC528A6-BFD1-ECDD-C158-86EFD863C072</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B71DFD0-8049-592B-8A82-4631085BEC7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE2B3E5C-F985-6525-DA9A-D7D9D8FA6536" name="Pracownik_laboratorium_Użytkownik_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>BE29DD95-D05A-B002-6150-9FDBC5860B56</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="378C9C9A-26DB-4C22-2573-FC68E964FD2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F8189E1-CCE4-CC1C-1665-9806822CD9F8" name="Pracownik_laboratorium_Laboratorium_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>145B33A4-935B-AC6F-0A20-553367624566</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B71DFD0-8049-592B-8A82-4631085BEC7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

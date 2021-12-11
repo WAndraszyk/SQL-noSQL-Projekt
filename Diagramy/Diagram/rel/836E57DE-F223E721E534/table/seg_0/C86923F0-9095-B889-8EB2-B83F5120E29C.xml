@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C86923F0-9095-B889-8EB2-B83F5120E29C" name="Laby_-_badania">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Laboratorium_ID" id="ACFBB851-08BF-35FE-37A9-DC496982C7E7">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F15F4A6A-3D2F-87F2-8764-A2255F007AAC" referredColumn="020C470D-9682-7A5A-ACCB-4FEB8A9F4A6F"/>
+</associations>
+</Column>
+<Column name="Badanie_Nazwa" id="9FCDFCC7-4A78-CB61-0B62-3FE814783891">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53B941C3-0A7F-D66F-E064-8F4FCD790153" referredColumn="567FE6A6-FA9C-EBAB-2D40-9350B4D775B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC3BF31B-4B3F-B870-D18F-878D9EDB4BD4" name="Laby_-_badania_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACFBB851-08BF-35FE-37A9-DC496982C7E7"/>
+<colUsage columnID="9FCDFCC7-4A78-CB61-0B62-3FE814783891"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A9A533D-3605-6F7C-D819-2FABF9724CAF" name="Laby_-_badania_Laboratorium_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>B729480E-5A51-5423-D380-07A792B44257</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACFBB851-08BF-35FE-37A9-DC496982C7E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A68BF715-6D08-FD17-C47E-F43C75B18138" name="Laby_-_badania_Badanie_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>B729480E-5A51-5423-D380-07A792B44257</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FCDFCC7-4A78-CB61-0B62-3FE814783891"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

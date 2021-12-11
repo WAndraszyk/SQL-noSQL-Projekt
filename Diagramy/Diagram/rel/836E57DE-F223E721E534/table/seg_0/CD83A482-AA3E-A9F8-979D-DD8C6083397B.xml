@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD83A482-AA3E-A9F8-979D-DD8C6083397B" name="Zabieg">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>AF06DE8A-B577-E509-1ED3-C17701394AFE</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="70DC01E4-9860-BCF6-237E-6183D8590503">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>6768B9FA-65F9-5747-4C3D-2620C0B467B6</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC46E89D-0B07-E626-9562-4F484C164C4D" referredColumn="5C1C2FD3-E9DE-BECC-923C-FA1358442913"/>
+</associations>
+</Column>
+<Column name="PESEL" id="E78B1C82-8478-9716-1310-925A7DAC5598">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>6B202E57-51B7-DC80-CF3D-A7FAC9430BE2</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC46E89D-0B07-E626-9562-4F484C164C4D" referredColumn="9601B5F4-7FAF-FDC0-337F-F5529E6BC59F"/>
+</associations>
+</Column>
+<Column name="Nazwa" id="E972406E-5983-6A15-277A-DFD58994C63E">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>E0015970-7D64-4334-7923-0E14325219E4</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis" id="B66D0069-804C-F5C6-018C-53717DB6BB90">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>9E68B808-ECBC-9748-E3B7-0216DC4C9515</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="36CE99FA-CF94-C5BA-AAB2-A7838DA758FF" name="Zabieg_PK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>6980AC9B-78E6-5E37-22FF-047CC8133E0A</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70DC01E4-9860-BCF6-237E-6183D8590503"/>
+<colUsage columnID="E78B1C82-8478-9716-1310-925A7DAC5598"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5D8FA2E-894E-0804-FA90-AF49944239E0" name="Zabieg_PKv1">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>A0A00031-07B7-E3C5-0580-921AC3A6A88D</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E972406E-5983-6A15-277A-DFD58994C63E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBEB52DE-D6FD-916F-1A88-5E977280000E" name="Zabieg_Wizyta_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 17:06:46 UTC</createdTime>
+<generatorID>319F7B00-5BF0-BAF0-8182-432281465088</generatorID>
+<ownerDesignName>Diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70DC01E4-9860-BCF6-237E-6183D8590503"/>
+<colUsage columnID="E78B1C82-8478-9716-1310-925A7DAC5598"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
