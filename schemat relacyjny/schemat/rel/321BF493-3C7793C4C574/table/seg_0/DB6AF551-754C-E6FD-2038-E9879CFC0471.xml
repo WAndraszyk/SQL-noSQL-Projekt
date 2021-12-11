@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB6AF551-754C-E6FD-2038-E9879CFC0471" name="Wykonywane_badania">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nazwa_badania" id="DDC98804-D21E-3C3F-2DDD-FE38A30B8D4D">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="751B9F70-47ED-A63E-67F8-B4257A8E6043" referredColumn="94FB704B-8064-2E70-536D-00610F7167DD"/>
+</associations>
+</Column>
+<Column name="id_laboratorium" id="B4C6A1DC-F343-75E8-C9BE-DDF1AFE52D5C">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33013A04-98B6-0FBC-F490-7C6ED7A61D68" referredColumn="EF171AB7-A097-A20E-F9BA-F3D0AE50119A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FCDAE67-7193-8F77-5DB5-D997452520A9" name="Wykonywane_badania_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDC98804-D21E-3C3F-2DDD-FE38A30B8D4D"/>
+<colUsage columnID="B4C6A1DC-F343-75E8-C9BE-DDF1AFE52D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75FD8831-6FBC-621B-1AB0-ECBBF9496B0F" name="Wykonywane_badania_Badania_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDC98804-D21E-3C3F-2DDD-FE38A30B8D4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA358EA2-6D8F-5A39-20C1-67D0C5F547D8" name="Wykonywane_badania_Laboratoria_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4C6A1DC-F343-75E8-C9BE-DDF1AFE52D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

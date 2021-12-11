@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Uzytkownicy" directorySegmentName="seg_0" id="89F1C56E-B390-9E8F-B92F-2E4569D23985">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="telefon" id="20987D86-BD47-78EA-BB4C-9A9E9103439F">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="imie" id="7DB4A254-01CB-458E-7763-3B156849978C">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nazwisko" id="A1CE0229-71A6-B0CA-2C3E-206344712BD2">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="C7D1B9D3-9FA1-1DF0-1C3A-1087E793B49E">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESEL" id="C8CD8124-2337-529E-1411-F40CC08B2849">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Uzytkownicy_PK" id="8806D6F2-2491-2AA1-708A-5484F870505B">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

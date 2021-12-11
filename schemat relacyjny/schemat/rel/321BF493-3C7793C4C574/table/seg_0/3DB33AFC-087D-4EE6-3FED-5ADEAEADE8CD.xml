@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DB33AFC-087D-4EE6-3FED-5ADEAEADE8CD" name="Wykonywane_zabiegi">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pesel_specjalisty" id="83E38FED-5789-97F3-F115-C7F6A9C48735">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A45DA515-42F3-A1BF-F5E7-7266BF933BE6" referredColumn="19F869E2-AEDC-73A9-1A1C-1B6B7E1E33B9"/>
+</associations>
+</Column>
+<Column name="nazwa_zabiegu" id="A884F1FD-47B8-C96E-5A79-C6055553E9C7">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E44CD1D7-78FF-D81F-8D98-8408DD004F00" referredColumn="85CD8939-3B67-56BB-AAA6-218F54835095"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1307102-444C-9FEE-E767-6F0D99F092E7" name="Wykonywane_zabiegi_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83E38FED-5789-97F3-F115-C7F6A9C48735"/>
+<colUsage columnID="A884F1FD-47B8-C96E-5A79-C6055553E9C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B7EC13F-E92D-5DB8-79AD-4E77FCAD9CD1" name="Wykonywane_zabiegi_Specjalisci_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83E38FED-5789-97F3-F115-C7F6A9C48735"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1071C4E8-1372-2EB7-5A99-1267CDF81E7F" name="Wykonywane_zabiegi_Zabiegi_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A884F1FD-47B8-C96E-5A79-C6055553E9C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

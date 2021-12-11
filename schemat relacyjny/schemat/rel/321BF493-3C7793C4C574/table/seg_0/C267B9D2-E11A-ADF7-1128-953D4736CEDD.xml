@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C267B9D2-E11A-ADF7-1128-953D4736CEDD" name="Poradnie">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0A3F9611-4ED9-A02B-B69A-AC82C5C8B459">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="typ" id="3FDA168D-B87C-055A-E8DE-51EB38ECC876">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="36509C03-26E9-CA02-8344-88E2F1C0A976">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="miasto" id="D56CEE4B-9112-5B64-3299-242A53A7F6C0">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adres" id="F8B9C493-3E81-9190-8143-DA7FD069E296">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="407307B7-6018-1A30-2B2F-DA1FA9238BBA">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2EA8443-3B57-7B07-7E85-F00896C12E54" name="Poradnie_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A3F9611-4ED9-A02B-B69A-AC82C5C8B459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

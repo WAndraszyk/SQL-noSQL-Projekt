@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB2933DB-24D6-DBC6-657F-8F8F13C60B3C" name="Pacjenci">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="1867877E-C3F8-AFD2-741B-181F022086D7">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63323528-DF65-3544-9180-00E3A072C240" referredColumn="C8CD8124-2337-529E-1411-F40CC08B2849"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A22CA949-872A-0D4C-5649-7B530A9A0757" name="Pacjenci_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1867877E-C3F8-AFD2-741B-181F022086D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE43AF8C-563B-9D1E-CEB2-B0D237722F78" name="Pacjenci_Uzytkownicy_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1867877E-C3F8-AFD2-741B-181F022086D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

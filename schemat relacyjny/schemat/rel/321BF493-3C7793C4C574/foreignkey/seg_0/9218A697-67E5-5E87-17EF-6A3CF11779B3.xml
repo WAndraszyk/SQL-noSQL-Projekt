@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9218A697-67E5-5E87-17EF-6A3CF11779B3" containerWithKeyObject="6789784F-A4E9-3AB5-1F0F-FAA630223DA8" localFKIndex="B5182F3B-B79C-7DC7-3021-EA69E436A646" name="Konsultacje_Wizyty_FK">
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:04:58 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<referredTableLongName>Wizyty</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8C12AFC1-324A-480C-0CFE-54008757CF31</referredTableID>
+<keyObject>568C7597-818F-3D76-F3D1-8A8FADF6D250</keyObject>
+<referredKeyID>568C7597-818F-3D76-F3D1-8A8FADF6D250</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID,pesel_pacjenta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7B29C236-1E4B-E9CC-2447-652F1FD6474E" containerWithKeyObject="6EE4EB2D-DBD9-1B9B-CA03-CDC032B615AC" localFKIndex="26AFC27D-1050-137C-373F-FAF32D6C3827" name="Jednostki_czasu_Specjalisci_FK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>Witold</createdBy>
+<createdTime>2021-12-11 20:02:45 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<referredTableLongName>Specjalisci</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F7DF57F-C3AC-9A7E-24B9-C914B920F72C</referredTableID>
+<keyObject>65B9581C-F670-C047-7CC4-BBB255665729</keyObject>
+<referredKeyID>65B9581C-F670-C047-7CC4-BBB255665729</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PESEL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
