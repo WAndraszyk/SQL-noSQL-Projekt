@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="348FC189-805C-FFC8-4D4F-4FB0A0EF00EA" name="Zabiegi">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nazwa" id="1AFB41A1-72DE-3BCE-E312-8BB26DCB3098">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3E579951-3212-236D-0DA4-8D9E40AABBA4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opis" id="85F9AF08-1E75-6A3D-B50E-906677901663">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>82F75E5D-93E2-D2C9-7942-CECBE2C34A22</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F04F2CC3-1244-04F8-3203-CDDFF226206D" name="Zabiegi_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AFB41A1-72DE-3BCE-E312-8BB26DCB3098"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

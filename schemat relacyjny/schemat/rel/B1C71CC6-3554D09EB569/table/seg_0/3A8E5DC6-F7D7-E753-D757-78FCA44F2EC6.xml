@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A8E5DC6-F7D7-E753-D757-78FCA44F2EC6" name="Jednostki_czasu">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="data_i_godzina" id="26B4FB69-2C04-6F6E-167B-9CA5CA70309D">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>8D2CC257-3E2C-8164-E2C0-D47A742E522C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wolna" id="FEE95D1D-80A8-B9CD-6C2E-6F15A53245D7">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>B7EF4BDE-0ED0-7251-3C06-2B3BC6E54C2A</domain>
+<listOfValues>
+<valueDef value="W" description=""/>
+<valueDef value="Z" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_wizyty" id="651BCA24-825B-BB5B-77E2-CC66C1D412B5">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D77F88B5-DFAD-58A9-B3B9-0B284ABA9C49" referredColumn="46552A82-3F16-5A3E-E9E6-A3A259214297"/>
+</associations>
+</Column>
+<Column name="pesel_pacjenta" id="924E3F13-22AD-EDB4-7EBF-BF436D077B73">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D77F88B5-DFAD-58A9-B3B9-0B284ABA9C49" referredColumn="DAF584BE-878C-DF87-3E05-CA835EC05FDB"/>
+</associations>
+</Column>
+<Column name="pesel_specjalisty" id="E50C28E4-B2CE-B7F0-3B61-1B516AC8F5E7">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25180A2A-267F-1B1F-4ACA-BF13DDAEDE2E" referredColumn="7C459A62-3D05-37C1-2C2C-31DF785A83B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07B446A3-A493-A033-A9E2-6A65BE296C2B" name="Jednostki_czasu_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26B4FB69-2C04-6F6E-167B-9CA5CA70309D"/>
+<colUsage columnID="E50C28E4-B2CE-B7F0-3B61-1B516AC8F5E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46C6888D-9E09-BE1E-F5FB-DF54A95B2EE7" name="jednostka_czasu_wizyta_fk">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="651BCA24-825B-BB5B-77E2-CC66C1D412B5"/>
+<colUsage columnID="924E3F13-22AD-EDB4-7EBF-BF436D077B73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7DE7C12-8516-6482-9090-68D4BDA72EF2" name="Jednostki_czasu_Specjalisci_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E50C28E4-B2CE-B7F0-3B61-1B516AC8F5E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

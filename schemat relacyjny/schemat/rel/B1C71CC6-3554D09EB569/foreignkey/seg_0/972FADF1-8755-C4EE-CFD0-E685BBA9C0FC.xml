@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="972FADF1-8755-C4EE-CFD0-E685BBA9C0FC" containerWithKeyObject="EA1AEC88-C3DB-E4DE-7E10-CD19E352C6BB" localFKIndex="29349633-86DB-39AF-2B13-26E79CDF659A" name="Wykonywane_badania_Badania_FK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<referredTableLongName>Badania</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C36B2711-3ABB-BC35-7B1F-6A26602C0396</referredTableID>
+<keyObject>EB373C4C-569A-355C-CA10-E9F30C299786</keyObject>
+<referredKeyID>EB373C4C-569A-355C-CA10-E9F30C299786</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nazwa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

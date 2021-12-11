@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F47618AA-1857-1BC5-AB53-C63CA4C63C04" containerWithKeyObject="43247E0F-2E36-987B-EC93-07D94324CA96" localFKIndex="103CFFA3-B88D-765B-9994-FB2F521B3FCB" name="Wykonywane_zabiegi_Specjalisci_FK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<referredTableLongName>Specjalisci</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BCDA3177-9AD8-42FA-E754-A861A07BA398</referredTableID>
+<keyObject>51205A5D-3925-5750-BB6F-F2DC4DE93A72</keyObject>
+<referredKeyID>51205A5D-3925-5750-BB6F-F2DC4DE93A72</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PESEL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

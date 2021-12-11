@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43247E0F-2E36-987B-EC93-07D94324CA96" name="Wykonywane_zabiegi">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pesel_specjalisty" id="CBC0EC83-0EE3-F930-738A-99F43F006635">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F47618AA-1857-1BC5-AB53-C63CA4C63C04" referredColumn="7C459A62-3D05-37C1-2C2C-31DF785A83B7"/>
+</associations>
+</Column>
+<Column name="nazwa_zabiegu" id="32D05E89-5390-03CB-EB2A-3BD9D2122E15">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3E579951-3212-236D-0DA4-8D9E40AABBA4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E5BCF4FC-C004-4276-13DE-0AFC89582736" referredColumn="1AFB41A1-72DE-3BCE-E312-8BB26DCB3098"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51A4BB6A-665D-A291-4C47-9CBF24D64F16" name="Wykonywane_zabiegi_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBC0EC83-0EE3-F930-738A-99F43F006635"/>
+<colUsage columnID="32D05E89-5390-03CB-EB2A-3BD9D2122E15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="103CFFA3-B88D-765B-9994-FB2F521B3FCB" name="Wykonywane_zabiegi_Specjalisci_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBC0EC83-0EE3-F930-738A-99F43F006635"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C28A8EB-78E6-5FFC-117D-FAE75913B973" name="Wykonywane_zabiegi_Zabiegi_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32D05E89-5390-03CB-EB2A-3BD9D2122E15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

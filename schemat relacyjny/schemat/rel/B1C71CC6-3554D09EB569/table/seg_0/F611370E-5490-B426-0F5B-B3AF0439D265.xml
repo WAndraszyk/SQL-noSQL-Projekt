@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F611370E-5490-B426-0F5B-B3AF0439D265" name="Zabiegi_na_wizytach">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3F562902-1AFC-39AD-D419-81B6E21CAEE0">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94871869-1C18-8386-A009-DCA04D476EC3" referredColumn="46552A82-3F16-5A3E-E9E6-A3A259214297"/>
+</associations>
+</Column>
+<Column name="pesel_pacjenta" id="7F471330-FEEB-9EE5-47FD-D0359961CB70">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94871869-1C18-8386-A009-DCA04D476EC3" referredColumn="DAF584BE-878C-DF87-3E05-CA835EC05FDB"/>
+</associations>
+</Column>
+<Column name="nazwa_zabiegu" id="12B97A60-952E-FA91-5ED3-4ABC23831E44">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3E579951-3212-236D-0DA4-8D9E40AABBA4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D32286F-160D-D18E-85BE-84A046D54B58" referredColumn="1AFB41A1-72DE-3BCE-E312-8BB26DCB3098"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF0411D2-1D66-8453-06CD-B2F21D3FBD3A" name="Zabiegi_na_wizytach_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F562902-1AFC-39AD-D419-81B6E21CAEE0"/>
+<colUsage columnID="7F471330-FEEB-9EE5-47FD-D0359961CB70"/>
+<colUsage columnID="12B97A60-952E-FA91-5ED3-4ABC23831E44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19EA4FF5-B0AC-9A5D-A57A-FBD0511A09D2" name="zabieg_wizyta_fk">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F562902-1AFC-39AD-D419-81B6E21CAEE0"/>
+<colUsage columnID="7F471330-FEEB-9EE5-47FD-D0359961CB70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5D1D59F-5FE8-027B-A5D9-43BF5E221EC4" name="Zabiegi_na_wizytach_Zabiegi_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12B97A60-952E-FA91-5ED3-4ABC23831E44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

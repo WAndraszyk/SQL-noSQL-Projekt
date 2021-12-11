@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="917BC61D-36B7-CB27-CBEF-F9DF3BA5AA51" name="Laboranci">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="D26C60D1-DE4F-16DD-5A96-686CA7A5C926">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="829FB40A-9041-3754-2C4B-243F8B309278" referredColumn="641FBFAC-4B3B-4FAD-CFE9-361AFAA1921B"/>
+</associations>
+</Column>
+<Column name="id_laboratorium" id="1704998B-B764-5227-9624-86214A13F00F">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4890E303-DC3A-43FF-31D2-71A1222530A2" referredColumn="EB820610-7ED8-9111-8CB5-2B16879EA0E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8270DFA-B4A5-775C-5FF9-CF298BDA0D06" name="Laboranci_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D26C60D1-DE4F-16DD-5A96-686CA7A5C926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E5250EF-5ED6-8B60-F670-7E2791B3ADDD" name="Laboranci_Uzytkownicy_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D26C60D1-DE4F-16DD-5A96-686CA7A5C926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58DBA090-10DA-06E5-3A71-2A344DB3CD5E" name="Laboranci_Laboratoria_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1704998B-B764-5227-9624-86214A13F00F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

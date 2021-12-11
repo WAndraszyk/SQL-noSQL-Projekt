@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25264717-0BF1-35FB-88F0-6CC8FB9889D3" name="Konsultacje">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="EA35125A-BC60-462D-23B3-7E1471E56D2D">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F83BEDDB-242B-EC76-7E6B-8530FB115683" referredColumn="46552A82-3F16-5A3E-E9E6-A3A259214297"/>
+</associations>
+</Column>
+<Column name="pesel_pacjenta" id="96490928-4BF7-F7C6-2F83-1F3DE630B8C8">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F83BEDDB-242B-EC76-7E6B-8530FB115683" referredColumn="DAF584BE-878C-DF87-3E05-CA835EC05FDB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDD46AA2-8E1A-27B8-2A7C-FB0E05B5E360" name="Konsultacje_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA35125A-BC60-462D-23B3-7E1471E56D2D"/>
+<colUsage columnID="96490928-4BF7-F7C6-2F83-1F3DE630B8C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5691E7CD-5D48-B322-87FE-585A7416D02A" name="konsultacja_wizyta_fk">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA35125A-BC60-462D-23B3-7E1471E56D2D"/>
+<colUsage columnID="96490928-4BF7-F7C6-2F83-1F3DE630B8C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

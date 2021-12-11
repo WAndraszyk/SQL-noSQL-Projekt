@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3419E123-D5CF-9E98-F20F-5ACC4F48E560" name="Badania_do_pobrania">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pobrania" id="1BA4AE8C-1040-2AD8-45DE-FFACB59AD36F">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7C04D6E-16BF-7BAB-EE53-969FECEFE512" referredColumn="2F06759C-1460-C183-A74A-5062EBA19835"/>
+</associations>
+</Column>
+<Column name="pesel_pacjenta" id="563F1BD3-3554-AAFB-18FB-995BA76163D9">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7C04D6E-16BF-7BAB-EE53-969FECEFE512" referredColumn="06E4C9A0-336A-6DB7-844A-0173EC76B066"/>
+</associations>
+</Column>
+<Column name="nazwa_badania" id="2626A051-7227-8281-2614-139C3F07C7EE">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3E579951-3212-236D-0DA4-8D9E40AABBA4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B21987E2-917B-46BF-4579-B591173C9009" referredColumn="00B0221A-3D5E-49DA-4272-52D09CA57795"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="136798C3-1D5C-83DD-B307-DB1B42621254" name="Badania_do_pobrania_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BA4AE8C-1040-2AD8-45DE-FFACB59AD36F"/>
+<colUsage columnID="563F1BD3-3554-AAFB-18FB-995BA76163D9"/>
+<colUsage columnID="2626A051-7227-8281-2614-139C3F07C7EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14029024-4894-037A-9B36-1C13B7E31905" name="badania_pobrania_fk">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BA4AE8C-1040-2AD8-45DE-FFACB59AD36F"/>
+<colUsage columnID="563F1BD3-3554-AAFB-18FB-995BA76163D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA0A3D61-2B97-3169-16D9-486FCBEF15AC" name="Badania_do_pobrania_Badania_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2626A051-7227-8281-2614-139C3F07C7EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

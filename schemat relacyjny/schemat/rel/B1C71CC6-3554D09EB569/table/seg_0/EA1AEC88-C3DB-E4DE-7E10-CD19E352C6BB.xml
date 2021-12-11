@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA1AEC88-C3DB-E4DE-7E10-CD19E352C6BB" name="Wykonywane_badania">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nazwa_badania" id="835BF510-D3BD-2B4A-F3BC-EB2C40F09D6F">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3E579951-3212-236D-0DA4-8D9E40AABBA4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="972FADF1-8755-C4EE-CFD0-E685BBA9C0FC" referredColumn="00B0221A-3D5E-49DA-4272-52D09CA57795"/>
+</associations>
+</Column>
+<Column name="id_laboratorium" id="7C693B87-00BC-58C0-1364-25E7368EB859">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DC8A48B1-B990-AA74-CACF-18B82F27D106</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF953AA1-A74B-9B78-B256-EC8DD00BB04D" referredColumn="EB820610-7ED8-9111-8CB5-2B16879EA0E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="127C4A4D-A9F5-71E9-0926-CD0597EBD507" name="Wykonywane_badania_PK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="835BF510-D3BD-2B4A-F3BC-EB2C40F09D6F"/>
+<colUsage columnID="7C693B87-00BC-58C0-1364-25E7368EB859"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29349633-86DB-39AF-2B13-26E79CDF659A" name="Wykonywane_badania_Badania_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="835BF510-D3BD-2B4A-F3BC-EB2C40F09D6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DF9FD0D-A8F0-E65B-C78F-127DF9932D9A" name="Wykonywane_badania_Laboratoria_FK">
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C693B87-00BC-58C0-1364-25E7368EB859"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

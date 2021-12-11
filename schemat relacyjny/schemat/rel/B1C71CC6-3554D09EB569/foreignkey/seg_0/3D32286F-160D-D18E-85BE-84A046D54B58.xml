@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3D32286F-160D-D18E-85BE-84A046D54B58" containerWithKeyObject="F611370E-5490-B426-0F5B-B3AF0439D265" localFKIndex="A5D1D59F-5FE8-027B-A5D9-43BF5E221EC4" name="Zabiegi_na_wizytach_Zabiegi_FK">
+<sourceDDLFile>schemat.ddl</sourceDDLFile>
+<createdBy>wandr</createdBy>
+<createdTime>2021-12-11 23:08:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<referredTableLongName>Zabiegi</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>348FC189-805C-FFC8-4D4F-4FB0A0EF00EA</referredTableID>
+<keyObject>F04F2CC3-1244-04F8-3203-CDDFF226206D</keyObject>
+<referredKeyID>F04F2CC3-1244-04F8-3203-CDDFF226206D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nazwa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
